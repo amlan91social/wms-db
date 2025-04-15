@@ -1,0 +1,29 @@
+{
+  "name": "wms-db",
+  "version": "1.0.0",
+  "description": "Database migration scripts for WMS using sequelize",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlan91social/wms-db.git"
+  },
+  "author": "Amlanjyoti Saikia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amlan91social/wms-db/issues"
+  },
+  "homepage": "https://github.com/amlan91social/wms-db#readme",
+  "dependencies": {
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "sequelize-cli": "^6.6.2"
+  },
+  "scripts": {
+    "migration:create": "npx sequelize-cli migration:create",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  }
+}
