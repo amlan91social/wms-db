@@ -19,11 +19,13 @@
   },
   "devDependencies": {
     "babel-register": "^6.26.0",
+    "sequelize-auto": "^0.8.8",
     "sequelize-cli": "^6.6.2"
   },
   "scripts": {
     "migration:create": "npx sequelize-cli migration:create",
     "migrate:up": "npx sequelize-cli db:migrate",
-    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "models:create-from-db": "sequelize-auto -h 127.0.0.1 -d wms-db -u root -x mysql -p 3306 --dialect mysql -o ./models"
   }
 }
