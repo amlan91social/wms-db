@@ -12,6 +12,7 @@ module.exports = {
       bigNumberStrings: true,
       multipleStatements: true,
     },
+    seederStorage: 'sequelize',
   },
   test: {
     username: process.env.CI_DB_USERNAME,
