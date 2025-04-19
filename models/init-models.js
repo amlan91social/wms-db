@@ -10,7 +10,6 @@ var _partner_vehicle = require("./partner_vehicle");
 var _partnership = require("./partnership");
 var _region = require("./region");
 var _scale_data = require("./scale_data");
-var _sequelizemeta = require("./sequelizemeta");
 var _system_feature = require("./system_feature");
 var _transporter_operator_coodinates = require("./transporter_operator_coodinates");
 var _user = require("./user");
@@ -41,7 +40,6 @@ function initModels(sequelize) {
   var partnership = _partnership(sequelize, DataTypes);
   var region = _region(sequelize, DataTypes);
   var scale_data = _scale_data(sequelize, DataTypes);
-  var sequelizemeta = _sequelizemeta(sequelize, DataTypes);
   var system_feature = _system_feature(sequelize, DataTypes);
   var transporter_operator_coodinates = _transporter_operator_coodinates(sequelize, DataTypes);
   var user = _user(sequelize, DataTypes);
@@ -73,7 +71,6 @@ function initModels(sequelize) {
     partnership,
     region,
     scale_data,
-    sequelizemeta,
     system_feature,
     transporter_operator_coodinates,
     user,
