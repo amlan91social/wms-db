@@ -32,6 +32,8 @@ module.exports = function(sequelize, DataTypes) {
     sequelize,
     tableName: 'user_role_system_feature_access',
     timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
     indexes: [
       {
         name: "PRIMARY",

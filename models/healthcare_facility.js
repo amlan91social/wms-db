@@ -60,6 +60,8 @@ module.exports = function(sequelize, DataTypes) {
     sequelize,
     tableName: 'healthcare_facility',
     timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
     indexes: [
       {
         name: "PRIMARY",

@@ -84,6 +84,8 @@ module.exports = function(sequelize, DataTypes) {
     sequelize,
     tableName: 'partnership',
     timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
     indexes: [
       {
         name: "PRIMARY",

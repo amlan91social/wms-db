@@ -35,6 +35,8 @@ module.exports = function(sequelize, DataTypes) {
     sequelize,
     tableName: 'waste_transportation_request',
     timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
     indexes: [
       {
         name: "PRIMARY",

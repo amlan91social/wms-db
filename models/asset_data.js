@@ -22,7 +22,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     status: {
-      type: DataTypes.ENUM('OPERATIONAL','UNDER_MAINTAINENCE','OUT_OF_SERVICE','IDLE','RETIRED'),
+      type: DataTypes.ENUM('OPERATIONAL','UNDER_MAINTENANCE','OUT_OF_SERVICE','IDLE','RETIRED'),
       allowNull: false,
       defaultValue: "IDLE"
     }

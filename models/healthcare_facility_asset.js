@@ -33,7 +33,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     asset_status: {
-      type: DataTypes.ENUM('OPERATIONAL','UNDER_MAINTAINENCE','OUT_OF_SERVICE','IDLE','RETIRED'),
+      type: DataTypes.ENUM('OPERATIONAL','UNDER_MAINTENANCE','OUT_OF_SERVICE','IDLE','RETIRED'),
       allowNull: true
     }
   }, {
